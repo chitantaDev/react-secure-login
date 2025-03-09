@@ -1,19 +1,27 @@
 import React, {useEffect, useState} from 'react'
-import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import {useAuthStore} from './store/authStore'
 import {HomePage} from './pages/HomePage'
 import {PrivateRoute} from './components/PrivateRoute'
 import {authService} from "./services/authServices";
 import {TestPage} from "./pages/TestPage";
-import {NotFoundPage} from "./pages/NotFound";
-import NewLogin from "./pages/NewLogin";
+import {NotFoundPage} from "./pages/NotFoundPage";
+import MUILoginPage from "./pages/MUILoginPage";
 import {CssVarsProvider} from "@mui/joy";
 import ModeToggle from "./components/ModeToggle";
-import {Dashboard} from "./pages/Dashboard";
+import CssBaseline from "@mui/joy/CssBaseline";
+import ContentPage from "./pages/ContentPage";
+import PrivateRoutes from "./components/PrivateRoutes";
 
 const App = () => {
     const setAuth = useAuthStore(state => state.setAuth)
     const [isLoading, setIsLoading] = useState(true)
+    const privateRoutes = [
+        {path: "home", element: <HomePage/>},
+        {path: "test", element: <TestPage/>},
+        {path: "/content", element: <ContentPage/>},
+        {path: "*", element: <NotFoundPage/>},
+    ]
 
     useEffect(() => {
         const checkAuth = async () => {
@@ -35,22 +43,22 @@ const App = () => {
         return <div>Loading...</div>
     }
 
-    //TODO refactor private routes and map over it instead of having everything one by one in the routes
     return (
         <CssVarsProvider>
             <ModeToggle/>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/login" element={<NewLogin />} />
-                <Route element={<PrivateRoute />}>
-                    <Route path="/home" element={<HomePage />} />
-                    <Route path="/test" element={<TestPage />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="*" element={<NotFoundPage />} />
-                </Route>
-                <Route path="/" element={<Navigate to="/home" />} />
-            </Routes>
-        </BrowserRouter>
+            <CssBaseline />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/login" element={<MUILoginPage/>} />
+                    <Route element={<PrivateRoute/>}>
+                        <Route
+                            path={"*"}
+                            element={<PrivateRoutes routes={privateRoutes}/>}
+                        />
+                    </Route>
+                    <Route path="/" element={<HomePage/>} />
+                </Routes>
+            </BrowserRouter>
         </CssVarsProvider>
     )
 }

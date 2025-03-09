@@ -1,8 +1,12 @@
 import axios from 'axios'
+import {BASE_URL} from "../helper/Constants";
 
-//TODO: make an authorizedAxiosInstance service so i can reuse this instance in other places (like in my other projects)
+/**
+ * Spring sets cookies into HTTP response body,
+ * no need to handle token in the frontend
+ */
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api/v1', //TODO: export to a helper constant class, too lazy now c: (check if other classes have this need2)
+    baseURL: BASE_URL,
     withCredentials: true
 })
 

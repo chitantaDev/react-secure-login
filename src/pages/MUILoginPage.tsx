@@ -20,7 +20,7 @@ interface FormData {
     [key: string]: string;
 }
 
-export default function NewLogin() {
+export default function MUILoginPage() {
     const navigate = useNavigate()
     const setAuth = useAuthStore(state => state.setAuth)
     const { handleTextInputChange } = useHandleTextInput<FormData>();
@@ -44,7 +44,6 @@ export default function NewLogin() {
 
     return (
         <main>
-            <CssBaseline />
             <Sheet
                 sx={{
                     width: 300,

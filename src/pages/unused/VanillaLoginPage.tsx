@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useAuthStore } from '../store/authStore'
-import {authService} from "../services/authServices";
+import { useAuthStore } from '../../store/authStore'
+import {authService} from "../../services/authServices";
 
 /**
  * keeping this for now, will need later when im making a template
  * @constructor
  */
-export const LoginPage = () => {
+export const VanillaLoginPage = () => {
     const navigate = useNavigate()
     const setAuth = useAuthStore(state => state.setAuth)
 

@@ -1,6 +1,6 @@
-import { useAuthStore } from '../store/authStore'
+import { useAuthStore } from '../../store/authStore'
 import { useNavigate } from 'react-router-dom'
-import {authService} from "../services/authServices";
+import {authService} from "../../services/authServices";
 
 export const Dashboard = () => {
     const { user, logout: logoutStore } = useAuthStore()
@@ -14,7 +14,13 @@ export const Dashboard = () => {
 
     return (
         <div>
-            <h1>Welcome, {user?.firstname}!</h1>
+            <h1 style={{color: "blue",
+                border: "1px solid black",
+                justifyContent: "center",
+                width: "50%",
+                height: "500%"
+            }}
+            >Welcome, {user?.firstname}!</h1>
             <p>Role: {user?.role}</p>
             <button onClick={handleLogout}>Logout</button>
         </div>
