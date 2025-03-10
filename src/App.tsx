@@ -12,6 +12,7 @@ import ModeToggle from "./components/ModeToggle";
 import CssBaseline from "@mui/joy/CssBaseline";
 import ContentPage from "./pages/ContentPage";
 import PrivateRoutes from "./components/PrivateRoutes";
+import MainAppBar from "./components/MainAppBar";
 
 const App = () => {
     const setAuth = useAuthStore(state => state.setAuth)
@@ -45,9 +46,9 @@ const App = () => {
 
     return (
         <CssVarsProvider>
-            <ModeToggle/>
             <CssBaseline />
             <BrowserRouter>
+            <MainAppBar/>
                 <Routes>
                     <Route path="/login" element={<MUILoginPage/>} />
                     <Route element={<PrivateRoute/>}>

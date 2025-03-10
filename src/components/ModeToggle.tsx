@@ -21,7 +21,7 @@ export default function ModeToggle() {
 
     return (
         <Select
-            variant="soft"
+            variant="plain"
             value={mode}
             onChange={(event, newMode) => {
                 setMode(newMode);

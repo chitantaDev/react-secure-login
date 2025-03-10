@@ -1,7 +1,6 @@
-import { useAuthStore } from '../store/authStore'
-import { useNavigate } from 'react-router-dom'
-import { authService } from "../services/authServices";
-import CssBaseline from "@mui/joy/CssBaseline";
+import {useAuthStore} from '../store/authStore'
+import {useNavigate} from 'react-router-dom'
+import {authService} from "../services/authServices";
 
 export const HomePage = () => {
     const { user, logout: logoutStore } = useAuthStore()

@@ -44,3 +44,4 @@ sketch
 # End of https://www.toptal.com/developers/gitignore/api/react
 /.$react-spring-security-secure-login.drawio.bkp
 /react-spring-security-secure-login.drawio
+/todo.txt

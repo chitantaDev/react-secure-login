@@ -1,13 +1,12 @@
 import {myCss} from "../styles/styleUtils";
+import MainContainer from "../components/MainContainer";
 
 const ContentPage = () => {
-    const styles = myCss
+    //const styles = myCss
 
     return(
         <main>
-            <div style={styles.container}>
-                Your App content here
-            </div>
+            <MainContainer/>
         </main>
     )
 }

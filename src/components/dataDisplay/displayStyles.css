@@ -1,0 +1,17 @@
+.income-container, .needs-container, .wants-container, .investment-container {
+    flex: 1; /* Each takes 1/3 of the upper section */
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* In case content is too large */
+    flex-direction: row;
+}
+
+.item {
+    flex: 1; /* Each takes 1/3 of the upper section */
+    margin: 10px;
+    padding: 15px;
+    overflow: auto; /* In case content is too large */
+    flex-direction: row;
+}

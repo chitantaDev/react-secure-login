@@ -6,21 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="3b1625f8-8b99-47c9-862d-1fe01cdd2da8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/unused/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModeToggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModeToggle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ContentPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContentPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/unused/VanillaLoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NewLogin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MUILoginPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFoundPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/authServices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/authServices.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MUILoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MUILoginPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +54,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/chitantadev/Development/react-secure-login/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -97,7 +104,8 @@
       <workItem from="1741281876741" duration="1975000" />
       <workItem from="1741450011695" duration="4469000" />
       <workItem from="1741479059882" duration="1597000" />
-      <workItem from="1741542708912" duration="5620000" />
+      <workItem from="1741542708912" duration="25060000" />
+      <workItem from="1741628209978" duration="284000" />
     </task>
     <servers />
   </component>
